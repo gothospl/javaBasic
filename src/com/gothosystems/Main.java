@@ -29,7 +29,9 @@ public class Main {
         System.out.print("Period (Years): ");
         int numberOfPayments = scanner.nextInt() * MONTHS;
         double totalInterest = Math.pow((1 + monthlyInterest), numberOfPayments);
-        double mortgagePayment = principal * ((monthlyInterest * totalInterest) / (totalInterest - 1));
+        double mortgagePayment = principal
+                                * ((monthlyInterest * totalInterest)
+                                / (totalInterest - 1));
 
         System.out.println("Mortgage: " + currency.format(mortgagePayment));
     }
