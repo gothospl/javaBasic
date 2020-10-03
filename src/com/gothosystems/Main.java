@@ -20,11 +20,11 @@ public class Main {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
 
         System.out.print("Principal: ");
-        double principal = scanner.nextDouble();
+        int principal = scanner.nextInt();
 
         System.out.print("Annual Interest Rate: ");
-        double annualInterest = scanner.nextDouble() / PERCENT;
-        double monthlyInterest = annualInterest / MONTHS;
+        float annualInterest = scanner.nextFloat() / PERCENT;
+        float monthlyInterest = annualInterest / MONTHS;
 
         System.out.print("Period (Years): ");
         int numberOfPayments = scanner.nextInt() * MONTHS;
